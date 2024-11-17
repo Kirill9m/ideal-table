@@ -18,6 +18,8 @@ console.log(filteredUsers);
     { name: "Frank", age: 20, active: true }
 ]
 
-function getAdults(users) {
-    // Ваш код здесь
+function getAdults(array) {
+    return array.filter(user => user.age > 18 && user.active);
 }
+
+getAdults(users);
