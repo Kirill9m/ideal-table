@@ -1,0 +1,13 @@
+async function execute() {
+    try {
+        const data = await fetchData();
+        console.log(data); // Вывод: "Данные загружены"
+        
+        const processedData = await processData(data);
+        console.log(processedData); // Вывод: "Данные загружены и обработаны"
+    } catch (error) {
+        console.error("Ошибка:", error);
+    }
+}
+
+execute();
