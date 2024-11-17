@@ -1,0 +1,19 @@
+const users = [
+    { name: "Alice", age: 25, active: true },
+    { name: "Bob", age: 17, active: false },
+    { name: "Charlie", age: 30, active: true },
+    { name: "David", age: 15, active: true },
+    { name: "Eve", age: 22, active: false },
+    { name: "Frank", age: 20, active: true }
+];
+
+// Используем filter для получения активных пользователей старше 18 лет
+const filteredUsers = users.filter(user => user.age > 18 && user.active);
+
+console.log(filteredUsers);
+
+[
+    { name: "Alice", age: 25, active: true },
+    { name: "Charlie", age: 30, active: true },
+    { name: "Frank", age: 20, active: true }
+]
