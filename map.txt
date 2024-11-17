@@ -5,3 +5,17 @@ const doubled = numbers.map(num => num * 2);
 
 console.log(doubled); // Вывод: [2, 4, 6, 8, 10]
 console.log(numbers);  // Вывод: [1, 2, 3, 4, 5] (оригинальный массив не изменился)
+
+const fruits = ['apple', 'banana', 'cherry'];
+
+const fruitLengths = fruits.map((fruit, index) => {
+    return `${index}: ${fruit} имеет длину ${fruit.length}`;
+});
+
+console.log(fruitLengths);
+// Вывод:
+// [
+//   "0: apple имеет длину 5",
+//   "1: banana имеет длину 6",
+//   "2: cherry имеет длину 6"
+// ]
