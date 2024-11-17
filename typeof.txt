@@ -1,0 +1,27 @@
+function processInput(input) {
+    // Проверяем тип входных данных с помощью typeof
+    if (typeof input === 'string') {
+        console.log(`Это строка: "${input}"`);
+    } else if (typeof input === 'number') {
+        console.log(`Это число: ${input}`);
+    } else if (typeof input === 'boolean') {
+        console.log(`Это булевый тип: ${input}`);
+    } else if (Array.isArray(input)) {
+        console.log(`Это массив: [${input.join(', ')}]`);
+    } else if (typeof input === 'object' && input !== null) {
+        console.log(`Это объект:`, input);
+    } else if (input === null) {
+        console.log(`Это null`);
+    } else {
+        console.log(`Неизвестный тип: ${typeof input}`);
+    }
+}
+
+// Примеры использования функции
+processInput("Hello, world!"); // Это строка: "Hello, world!"
+processInput(42);                // Это число: 42
+processInput(true);              // Это булевый тип: true
+processInput([1, 2, 3]);         // Это массив: [1, 2, 3]
+processInput({ name: "Alice" }); // Это объект: { name: "Alice" }
+processInput(null);              // Это null
+processInput(undefined);         // Неизвестный тип: undefined
