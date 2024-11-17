@@ -17,3 +17,7 @@ console.log(filteredUsers);
     { name: "Charlie", age: 30, active: true },
     { name: "Frank", age: 20, active: true }
 ]
+
+function getAdults(users) {
+    // Ваш код здесь
+}
