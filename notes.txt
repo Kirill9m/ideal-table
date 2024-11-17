@@ -1,0 +1,32 @@
+class ArrayManager {
+    constructor() {
+        this.items = []; // Инициализируем пустой массив
+    }
+
+    // Метод для добавления элемента в конец массива
+    addItem(item) {
+        this.items.push(item);
+        console.log(`Добавлено: ${item}`);
+        this.displayItems();
+    }
+
+    // Метод для удаления последнего элемента из массива
+    removeLastItem() {
+        const removedItem = this.items.pop();
+        console.log(`Удалено: ${removedItem}`);
+        this.displayItems();
+    }
+
+    // Метод для отображения текущих элементов массива
+    displayItems() {
+        console.log('Текущие элементы:', this.items);
+    }
+}
+
+// Пример использования класса
+const manager = new ArrayManager();
+
+manager.addItem('Apple');
+manager.addItem('Banana');
+manager.removeLastItem(); // Удаляет 'Banana'
+manager.addItem('Cherry');
